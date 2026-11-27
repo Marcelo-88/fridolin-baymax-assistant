@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Asistente Fridolin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="assistant">
+    <div id="chat-panel" class="hidden">
+      <div id="messages"></div>
+      <div id="input-area">
+        <textarea id="input" placeholder="¿En qué te ayudo?" rows="2"></textarea>
+        <div class="buttons">
+          <button id="mic" title="Dictar" aria-label="Micrófono">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+              <line x1="12" y1="19" x2="12" y2="23"/>
+              <line x1="8" y1="23" x2="16" y2="23"/>
+            </svg>
+          </button>
+          <button id="send">Enviar</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="baymax-container">
+      <svg id="baymax" viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg">
+        <!-- Gorro de chef -->
+        <g id="hat">
+          <ellipse cx="100" cy="38" rx="58" ry="22" fill="#fff" stroke="#e8e8e8" stroke-width="1.5"/>
+          <path d="M50 38 Q100 8 150 38 L150 58 Q100 78 50 58 Z" fill="#fff" stroke="#e8e8e8" stroke-width="1.5"/>
+          <ellipse cx="100" cy="58" rx="42" ry="12" fill="#fafafa"/>
+        </g>
+        <!-- Cuerpo -->
+        <circle cx="100" cy="155" r="72" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+        <!-- Ojos -->
+        <g id="eyes">
+          <circle class="eye" cx="78" cy="138" r="9" fill="#222"/>
+          <circle class="eye" cx="122" cy="138" r="9" fill="#222"/>
+          <circle cx="81" cy="135" r="2.5" fill="#fff" opacity="0.7"/>
+          <circle cx="125" cy="135" r="2.5" fill="#fff" opacity="0.7"/>
+        </g>
+        <!-- Boca -->
+        <path d="M78 168 Q100 182 122 168" stroke="#333" fill="none" stroke-width="3.5" stroke-linecap="round"/>
+        <!-- Brazo derecho (para saludar) -->
+        <g id="arm" transform="translate(155,130)">
+          <rect x="0" y="0" width="14" height="48" rx="7" fill="#fff" stroke="#e0e0e0" stroke-width="1.5"/>
+          <circle cx="7" cy="56" r="13" fill="#fff" stroke="#e0e0e0" stroke-width="1.5"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
