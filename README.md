@@ -2,6 +2,8 @@
 
 Mini app web con asistente animado estilo Clippy (Baymax original con gorro de chef).
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Marcelo-88/fridolin-baymax-assistant)
+
 ## Configuración de secretos
 
 En el servidor (Render, Railway, etc.) configura estas variables de entorno:
@@ -11,14 +13,12 @@ En el servidor (Render, Railway, etc.) configura estas variables de entorno:
 
 Nunca subas el token al repositorio.
 
-## Despliegue recomendado
+## Despliegue recomendado (1 clic)
 
-1. Conecta este repositorio en [Render](https://render.com)
-2. Web Service → Node
-3. Build: `npm install`
-4. Start: `npm start`
-5. Añade las dos variables de entorno
-6. Despliega
+1. Haz clic en el botón de arriba o ve a [Render Deploy](https://render.com/deploy?repo=https://github.com/Marcelo-88/fridolin-baymax-assistant)
+2. Conecta tu cuenta de GitHub si te lo pide
+3. Añade las variables de entorno `SLACK_TOKEN` y `SLACK_CHANNEL`
+4. Despliega
 
 El frontend está en `/public`.
 
